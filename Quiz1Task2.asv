@@ -1,0 +1,11 @@
+fprintf('task2');
+t= -5 : 10;
+v=t.^3 - 2*t + 25;
+fprintf(' \n\n');
+
+for i =1 : length(t)
+
+    fprintf(' for t= %d, v=%d\n\n', t(1,i), v(1,i));
+end
+fprintf ('\n\n------\n');
+plot(t,v), xlabel('value of t'), ylabel('value of v');
